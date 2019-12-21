@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 import pymysql
 import pandas as pd
 
-db_connection_str = 'mysql+pymysql://xxuser:welcome1@127.0.0.1/sampledb'
+db_connection_str = 'mysql+pymysql://xxuser:welcome1@mysql-gamification.inmbzp8022.in.dst.ibm.com/sampledb'
 db_connection = create_engine(db_connection_str)
 pd.set_option('display.expand_frame_repr', True)
 #df = pd.read_sql("show tables", con=db_connection)
