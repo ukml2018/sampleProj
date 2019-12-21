@@ -5,10 +5,10 @@ RUN apk add --no-cache python3-dev \
 #WORKDIR /app
 #COPY . /app
 
-RUN pip3 --no-cache-dir install -r requirements.txt
+#RUN pip3 --no-cache-dir install -r requirements.txt
 
-RUN oc project gamification
-RUN oc port-forward mysql-4-s6hbv 3306:3306
+#RUN oc project gamification
+#RUN ssh mysql-4-s6hbv 3306:3306
 
 #EXPOSE 3306
 
