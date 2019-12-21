@@ -7,7 +7,10 @@ RUN apk add --no-cache python3-dev \
 
 RUN pip3 --no-cache-dir install -r requirements.txt
 
-EXPOSE 3306
+RUN oc project gamification
+RUN oc port-forward mysql-4-s6hbv 3306:3306
+
+#EXPOSE 3306
 
 ENTRYPOINT ["python3"]
 CMD ["querydb.py"]
