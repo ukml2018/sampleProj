@@ -15,6 +15,7 @@ def main():
  print(df.to_string())
 #print(df.column_name)
 #dbConnection.close()
+<<<<<<< HEAD
  print('---PRINT XXXIBM_PRODUCT_PRICING -----')
  df = pd.read_sql("select * from XXIBM_PRODUCT_PRICING limit 10", con=db_connection)
  print(df.to_string())
@@ -26,3 +27,14 @@ def main():
  print(df.to_string())
 if __name__ == '__main__':
     main()
+=======
+print('---PRINT XXXIBM_PRODUCT_PRICING -----')
+df = pd.read_sql("select * from XXIBM_PRODUCT_PRICING limit 10", con=db_connection)
+print(df.to_string())
+print('---PRINT XXXIBM_PRODUCT_SKU -----')
+df = pd.read_sql("select * from XXIBM_PRODUCT_SKU limit 10", con=db_connection)
+print(df.to_string())
+print('---PRINT XXIBM_PRODUCT_STYLE -----')
+df = pd.read_sql("select * from XXIBM_PRODUCT_STYLE limit 10", con=db_connection)
+print(df.to_string())
+>>>>>>> 25e66a6dfda8617d640b0b12404df62f1f23787a
