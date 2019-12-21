@@ -1,0 +1,2 @@
+APP_MODULE=querydb:app
+APP_CONFIG=gunicorn.conf
