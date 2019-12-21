@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 import pymysql
 import pandas as pd
 
-def main():
+#def main():
  db_connection_str = 'mysql+pymysql://xxuser:welcome1@mysql-gamification.inmbzp8022.in.dst.ibm.com/sampledb'
  db_connection = create_engine(db_connection_str)
  pd.set_option('display.expand_frame_repr', True)
@@ -24,5 +24,5 @@ def main():
  print('---PRINT XXIBM_PRODUCT_STYLE -----')
  df = pd.read_sql("select * from XXIBM_PRODUCT_STYLE limit 10", con=db_connection)
  print(df.to_string())
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+ #   main()
