@@ -1,9 +1,5 @@
-ipython-genutils
 ipython
 mysql-connector-python
 mysql-connector
 pandas
-py
-pymysql
-pytest
-gunicorn==19.4.5
+gunicorn
